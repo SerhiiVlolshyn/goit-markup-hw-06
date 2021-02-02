@@ -1089,22 +1089,6 @@ button.inactive {
   padding-bottom: var(--vertical-distance);
 }
 
-.filtres {
-  display: flex;
-  justify-content: center;
-  flex-basis: calc(100% / 5 - 10px);
-  margin-top: var(--vertical-distance);
-  margin-left: -8px;
-}
-
-.filtres li {
-  margin-left: 8px;
-}
-
-.filtres li:first-child {
-  margin-left: 0;
-}
-
 .checkbox-hide {
   position: absolute;
   widows: 1px;
@@ -1114,9 +1098,14 @@ button.inactive {
 }
 
 .filters {
-  margin-top: var(--vertical-distance);
   display: flex;
   justify-content: center;
+  margin-top: var(--vertical-distance);
+  margin-left: -8px;
+}
+
+.filter li {
+  flex-basis: calc(100% / 5 - 10px);
 }
 
 .filters li + li {
