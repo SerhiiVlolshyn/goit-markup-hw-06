@@ -625,7 +625,7 @@ button.inactive {
   margin-top: 5px;
   margin-left: var(--standard-margin);
 
-  flex-basis: calc(100% / 5 - var(--standard-margin));
+  flex-basis: calc(100% / 4 - var(--standard-margin));
 }
 
 .team img {
