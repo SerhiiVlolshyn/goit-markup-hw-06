@@ -606,10 +606,12 @@ button.inactive {
 }
 
 .team-list {
-  margin-top: var(--common-margin-top);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  margin-top: calc(var(--common-margin-top) - 5px);
+  margin-left: calc(-1 * var(--standard-margin));
 }
 
 .team-member {
@@ -620,15 +622,10 @@ button.inactive {
   background-color: #ffffff;
   width: var(--standard-width);
 
-  flex-basis: calc(100% / 5 - var(--standard-margin));
-}
-
-.team-member + .team-member {
-  margin-left: var(--standard-margin);
-}
-
-.team-member {
   margin-top: 5px;
+  margin-left: var(--standard-margin);
+
+  flex-basis: calc(100% / 5 - var(--standard-margin));
 }
 
 .team img {
