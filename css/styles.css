@@ -607,21 +607,23 @@ button.inactive {
 
 .team-list {
   margin-top: var(--common-margin-top);
-}
-
-.team .list {
   display: flex;
   justify-content: center;
 }
 
-.team-list > li {
-  margin-left: var(--standard-margin);
+.team-member {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px;
+
   background-color: #ffffff;
   width: var(--standard-width);
+
+  flex-basis: calc(100% / 4 - var(--standard-margin));
 }
 
-.team li:first-child {
-  margin-left: 0;
+.team-member + .team-member {
+  margin-left: var(--standard-margin);
 }
 
 .team img {
@@ -645,22 +647,14 @@ button.inactive {
   color: var(--regular-text-color);
 }
 
-.advantages-list,
-.team-list {
+.advantages-list {
   margin-left: auto;
   margin-right: auto;
 }
 
-.advantages-list-item,
-.team-member {
+.advantages-list-item {
   display: inline-block;
   width: var(--standard-width);
-}
-
-.team-member {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0 0 4px 4px;
 }
 
 .team-social-container {
