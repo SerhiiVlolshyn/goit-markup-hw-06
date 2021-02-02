@@ -1104,9 +1104,9 @@ button.inactive {
   margin-left: -8px;
 }
 
-.filter li {
+/* .filters li {
   flex-basis: calc(100% / 5 - 10px);
-}
+} */
 
 .filters li + li {
   margin-left: 8px;
