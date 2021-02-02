@@ -632,7 +632,7 @@ button.inactive {
 }
 
 .team img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .team .team-container {
