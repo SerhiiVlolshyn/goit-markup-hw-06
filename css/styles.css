@@ -251,7 +251,7 @@ footer a {
 }
 
 .footer-social {
-  margin-left: 74px;
+  margin-left: 84px;
 }
 
 .footer-social-header {
@@ -702,13 +702,13 @@ button.inactive {
 
 /* Клиенты */
 
-.our-clients .section-title {
-  margin-top: var(--vertical-distance);
+.our-clients {
+  padding-top: var(--vertical-distance);
+  padding-bottom: var(--vertical-distance);
 }
 
 .client-list {
   margin-top: var(--common-margin-top);
-  margin-bottom: var(--vertical-distance);
 
   display: flex;
 }
@@ -1081,13 +1081,13 @@ button.inactive {
 
 /* Элементы портфолио */
 
-.portfolio-main {
+.portfolio-section {
   padding-bottom: var(--vertical-distance);
 }
 
 .checkbox-hide {
   position: absolute;
-  widows: 1px;
+  width: 1px;
   height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -1154,9 +1154,9 @@ button.inactive {
 .portfolio-item {
   margin-left: var(--standard-margin);
   margin-top: var(--standard-margin);
+  min-width: 370px;
   flex-basis: calc(100% / 3 - var(--standard-margin));
   border: 1px solid #eeeeee;
-  width: 370px;
 }
 
 .portfolio-item-link {
@@ -1167,20 +1167,15 @@ button.inactive {
     var(--standard-cubic-bezier);
 }
 
-.portfolio-item:first-child {
-  margin-left: 0;
-}
-
 /* чистим все левые элементы от левого падинга */
 
 .portfolio-item:nth-child(3n -2) {
   margin-left: 0;
 }
 
-.portfolio-item .container {
+.portfolio-card {
   flex-direction: column;
   padding: 20px 24px;
-  width: 370px;
 }
 
 .portfolio-innerheit a:visited {
